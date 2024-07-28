@@ -1,25 +1,25 @@
-db = 'name_database'
+db = 'Whisperbot'
 # - - - - - - - - - - - - - #
 telegram_datas = {
-"botToken": "Bot_Token",
-"api_hash": "api_hash",
-"api_id": api_id,
+"botToken": "7135965418:AAHO8PkH4lYcEjFzn9K_Z6TG_12vQ0jfMOI",
+"api_hash": "b51499523800add51e4530c6f552dbc8",
+"api_id": 12962251,
 "device_model": "Linux",
-"system_version": "Ubuntu 20.04",
+"system_version": "Ubuntu 22.04",
 "app_version": "1.0",
 }
 # - - - - - - - - - - - - - #
-sudo_users = (777000, telegram_datas['botToken'].split(':')[0], ) # PUT_YOUR_ADMINS_HERE
+sudo_users = (833360381, telegram_datas['botToken'].split(':')[0], ) # PUT_YOUR_ADMINS_HERE
 # - - - - - - - - - - - - - #
 IDs_datas = {
-"sudo_id": SUDO_ID,
+"sudo_id": 833360381,
 "bot_id": int(telegram_datas['botToken'].split(':')[0]),
-"chUsername": "YOUR_CHANNEL_USERNAME", # for force join
-"chLink": "YOUR_CHANNEL_LINK", # for force join
+"chUsername": "MGIMT", # for force join
+"chLink": "https://t.me/MGIMT", # for force join
 }
 # - - - - - - - - - - - - - #
 server_datas = {
-"ip": "YOUR_SERVER_IP",
+"ip": "142.93.127.111",
 "port_server": 10128, #optional
 "port_tg": 8443, #80, 88, 443, 8443 
 }
