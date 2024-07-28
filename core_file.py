@@ -73,8 +73,8 @@ client = TelegramClient(
     app_version = telegram_datas['app_version']
 )
 client.session.save_entities = False
-rds = redis.Redis(
-    host="localhost", port=6379, db=3, decode_responses=True, encoding="utf-8"
+rds = redis.from_url(
+    'redis://default:8QIns3w6KXgSXQXgDSLNblpAUBRPhhxP@redis-12806.c12.us-east-1-4.ec2.redns.redis-cloud.com:12806'
 )
 loop = asyncio.get_event_loop()
 bot = Bot(token=telegram_datas["botToken"], loop=loop)
