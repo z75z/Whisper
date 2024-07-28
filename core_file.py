@@ -60,8 +60,8 @@ logging.basicConfig(
     file="aio.log",
 )
 log = logging.getLogger("broadcast")
-stroge = redis.Redis(
-    host="localhost", port=6379, db=3, decode_responses=False, encoding="utf-8"
+stroge = redis.from_url(
+    'redis://default:8QIns3w6KXgSXQXgDSLNblpAUBRPhhxP@redis-12806.c12.us-east-1-4.ec2.redns.redis-cloud.com:12806'
 )
 session = RedisSession(db, stroge)
 client = TelegramClient(
